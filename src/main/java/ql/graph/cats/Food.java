@@ -1,7 +1,5 @@
 package ql.graph.cats;
 
-import java.time.Instant;
-
 public class Food {
     private String id;
 
@@ -10,6 +8,9 @@ public class Food {
     private int points;
 
     private int minutes;
+
+    public Food() {
+    }
 
     public Food(String id, String title, int points, int minutes) {
         this.id = id;
