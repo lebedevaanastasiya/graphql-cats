@@ -1,0 +1,22 @@
+type Cat {
+    id: ID!
+    name: String!
+    foodItems: [Food]!
+}
+
+type Food {
+    id: ID!
+    title: String!
+    points: Int!
+    minutes: Int!
+}
+
+type Query {
+    cats: [Cat]!
+    foods: [Food]!
+}
+
+type Mutation {
+    createCat(name: String!): Cat!
+    createFood(title: String!, points: Int!, minutes: Int!): Food!
+}
