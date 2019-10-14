@@ -19,4 +19,9 @@ public class CatRepository {
     List<Cat> findAll() {
         return this.cats;
     }
+
+    Integer delete(String id) {
+        cats.removeIf(c -> c.getId().equals(id));
+        return 0;
+    }
 }

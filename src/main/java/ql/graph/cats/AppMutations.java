@@ -16,6 +16,8 @@ public class AppMutations implements GraphQLMutationResolver {
         return catRepository.create(name);
     }
 
+    Integer deleteCat(String id) { return catRepository.delete(id); }
+
     Food createFood(String title, int points, int minutes) {
         return foodRepository.create(title, points, minutes);
     }
