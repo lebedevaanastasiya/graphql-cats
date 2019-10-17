@@ -18,6 +18,9 @@ type Query {
 
 type Mutation {
     createCat(name: String!): Cat!
-    createFood(title: String!, points: Int!, minutes: Int!): Food!,
+    updateCat(id: String!, name: String!): Cat!
     deleteCat(id: String!): Int!
+    createFood(title: String!, points: Int!, minutes: Int!): Food!,
+    updateFood(id: String, title: String!, points: Int!, minutes: Int!): Food!,
+    deleteFood(id: String!): Int!
 }

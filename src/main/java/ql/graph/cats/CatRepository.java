@@ -1,5 +1,6 @@
 package ql.graph.cats;
 
+import exceptions.CatNotFoundException;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -18,6 +19,12 @@ public class CatRepository {
 
     List<Cat> findAll() {
         return this.cats;
+    }
+
+    Cat edit(String id, String name) throws CatNotFoundException {
+        var c = cats.stream().filter(q -> q.getId().equals(id)).findFirst().orElseThrow(() -> new CatNotFoundException("Cat not found", id));
+        c.setName(name);
+        return c;
     }
 
     Integer delete(String id) {

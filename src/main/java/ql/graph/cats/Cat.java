@@ -38,7 +38,7 @@ public class Cat {
         return foodItems;
     }
 
-    public void setFoodItems(List<Food> foodItems) {
-        this.foodItems = foodItems;
+    public void addFoodItem(Food foodItem) {
+        this.foodItems.add(foodItem);
     }
 }

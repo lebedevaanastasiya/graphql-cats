@@ -13,7 +13,7 @@ public class EatenFood {
         return catId;
     }
 
-    public void setCatId(String catId) {
+    void setCatId(String catId) {
         this.catId = catId;
     }
 
@@ -21,7 +21,7 @@ public class EatenFood {
         return food;
     }
 
-    public void setFood(Food food) {
+    void setFood(Food food) {
         this.food = food;
     }
 
@@ -29,7 +29,7 @@ public class EatenFood {
         return activeUntil;
     }
 
-    public void setActiveUntil(Instant activeUntil) {
+    void setActiveUntil(Instant activeUntil) {
         this.activeUntil = activeUntil;
     }
 }
