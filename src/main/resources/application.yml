@@ -3,48 +3,5 @@ server:
 
 dffrnt:
   auth:
-
     jwt:
       secret: 'top secret'
-    password:
-      hash:
-        salt:
-          log-rounds: '10'
-    providers: 'password, google, facebook, twitter'
-    facebook:
-      api:
-        url: 'https://graph.facebook.com'
-        version: 'v3.1'
-    google:
-      api:
-        url: 'https://www.googleapis.com'
-        version: 'v3'
-    twitter:
-      consumer:
-        key: ''
-        secret: ''
-    api:
-      payload:
-        types:
-          register: ''
-          verifyemail: ''
-      endpoints:
-        register: '/auth/users'
-        verifyemail: '/auth/users/email/verification'
-        external.signin: '/auth/users/signin/{provider}' # Provider param is required
-        signin: '/auth/users/signin'
-        signout: '/auth/users/signout'
-        anonymous:
-          token:
-            get: '/auth/users/anonymus/token'
-            validate: '/auth/users/anonymus/validate'
-        twitter: '/auth/twitter'
-    mail:
-      templates:
-        emailverification: 'hearhear-verificationemail'
-        passwordrestoring: 'hearhear-restoringpassword'
-    client:
-      host: 'http://localhost:8081'
-      paths:
-        emailaddressverification: 'auth/email-verification?code=%s'
-        passwordrestoring: 'auth/password-restoring?code=%s'
