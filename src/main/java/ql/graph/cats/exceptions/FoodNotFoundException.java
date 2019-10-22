@@ -1,4 +1,4 @@
-package exceptions;
+package ql.graph.cats.exceptions;
 
 public class FoodNotFoundException extends GraphQLException {
     private String invalidFoodId;

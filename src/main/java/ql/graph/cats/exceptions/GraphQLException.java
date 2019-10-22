@@ -1,4 +1,4 @@
-package exceptions;
+package ql.graph.cats.exceptions;
 
 import graphql.ErrorType;
 import graphql.GraphQLError;
