@@ -23,7 +23,7 @@
 		<dependency>
 			<groupId>co.dffrntlab</groupId>
 			<artifactId>auth</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>0.1.1-SNAPSHOT</version>
 		</dependency>
 
 		<dependency>
