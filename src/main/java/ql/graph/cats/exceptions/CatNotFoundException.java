@@ -1,4 +1,4 @@
-package exceptions;
+package ql.graph.cats.exceptions;
 
 public class CatNotFoundException extends GraphQLException {
     private String invalidCatId;

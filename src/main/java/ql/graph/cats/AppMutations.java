@@ -1,7 +1,7 @@
 package ql.graph.cats;
 
 import com.coxautodev.graphql.tools.GraphQLMutationResolver;
-import exceptions.CatNotFoundException;
+import ql.graph.cats.exceptions.CatNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

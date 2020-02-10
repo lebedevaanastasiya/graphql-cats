@@ -1,6 +1,6 @@
 package ql.graph.cats;
 
-import exceptions.FoodNotFoundException;
+import ql.graph.cats.exceptions.FoodNotFoundException;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
